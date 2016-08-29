@@ -20,5 +20,16 @@
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Tekst Android"
+        android:id="@+id/textView"
+        android:padding="10dp"
+        android:layout_below="@+id/zdjecie"
+        android:layout_alignStart="@+id/zdjecie"
+        android:gravity="right"/>
+
+
 
 </RelativeLayout>
