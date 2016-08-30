@@ -49,4 +49,14 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What do you prefer?"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:id="@+id/textView"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
 </RelativeLayout>
