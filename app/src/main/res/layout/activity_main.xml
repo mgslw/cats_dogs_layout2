@@ -2,49 +2,51 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
-    tools:context="com.example.magda.cats_dogs_layout.MainActivity"
-    android:weightSum="1">
+    android:orientation="horizontal">
 
 
 
 
-        <TextView
+
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save progress?"
-            android:id="@+id/textView"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textColor="#d83dce"
-            android:textSize="30sp" />
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/dog"
+            android:src="@drawable/dog"
+            android:layout_weight="0.5" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/cat"
+            android:src="@drawable/cat"
+            android:layout_weight="0.5" />
+
+</LinearLayout>
+
+        <Button
+            android:layout_width="197dp"
             android:layout_height="wrap_content"
+            android:text="@string/buttonDog"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonCat"
+            android:id="@+id/catbutton"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button1name"
-                    android:id="@+id/button"
-                    android:layout_weight="1"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button2name"
-                    android:id="@+id/button2"
-                    android:layout_weight="1"
-                     />
-        </LinearLayout>
-
+            android:layout_alignParentRight="true"/>
 
 </RelativeLayout>

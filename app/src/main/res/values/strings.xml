@@ -2,4 +2,6 @@
     <string name="app_name">cats_dogs_layout</string>
     <string name="button1name">NO</string>
     <string name="button2name">YES</string>
+    <string name="buttonCat">cat</string>
+    <string name="buttonDog">dog</string>
 </resources>
